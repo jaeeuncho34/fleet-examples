@@ -1,12 +1,12 @@
 namespace: fleet-mc-helm-example
 targetCustomizations:
-- name: k3s-1
+- name: cluster-2
   helm:
     values:
       replication: 3
   clusterSelector:
     matchLabels:
-      env: kes-cluster1
+      env: cluster-2
 
 #- name: test
 #  helm:
